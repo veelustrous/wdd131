@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product Review Form for customers to submit feedback and rate their experience with products.">
+  <meta name="author" content="Victoria Ashionye Malagu">
+
   <title>Product Review Form</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -24,22 +27,27 @@
 
     <!-- RATING -->
     <fieldset>
-      <legend>Overall Rating</legend>
-        <label>
-          <input type="radio" name="rating" value="1" required> ☆
-        </label>
-        <label>
-          <input type="radio" name="rating" value="2"> ☆☆
-        </label>
-        <label>
-          <input type="radio" name="rating" value="3"> ☆☆☆
-        </label>
-        <label>
-          <input type="radio" name="rating" value="4"> ☆☆☆☆
-        </label>
-        <label>
-          <input type="radio" name="rating" value="5"> ☆☆☆☆☆
-        </label>
+      <legend>Rate the product</legend>
+
+      <label for="rate1">
+        <input type="radio" id="rate1" name="rating" value="1" required> 1
+      </label>
+
+      <label for="rate2">
+        <input type="radio" id="rate2" name="rating" value="2" required> 2
+      </label>
+
+      <label for="rate3">
+        <input type="radio" id="rate3" name="rating" value="3" required> 3
+      </label>
+
+      <label for="rate4">
+        <input type="radio" id="rate4" name="rating" value="4" required> 4
+      </label>
+
+      <label for="rate5">
+        <input type="radio" id="rate5" name="rating" value="5" required> 5
+      </label>
     </fieldset>
 
     <!-- INSTALL DATE -->
@@ -74,6 +82,6 @@
   <p>© 2025 Product Reviews</p>
 </footer>
 
-<script src="scripts/form.js"></script>
+<script src="scripts/form.js" defer></script>
 </body>
 </html>
