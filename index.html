@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Victoria Ashionye Malagu | Personal course landing page with HTML, CSS, and JavaScript." />
+  <meta name="author" content="Victoria A. Malagu" />
+  <title>WDD 131 – Dynamic Web Fundamentals – Victoria A. Malagu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/base.css" />
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav class="navigation">
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Victoria A. Malagu</h1>
+    <section class="card">
+      <h2>About Me</h2>
+      <img src="images/profile.jpg" alt="Photo of Victoria" />
+      <p>
+        Hey there! 👋 I’m Vee — a student exploring the world of web development through
+        BYU–Idaho. I’m passionate about creativity, tech, and building things that make
+        people smile. I'm on a journey of self discovery so hop on the train!
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>My Interests</h2>
+      <img src="images/hobby.jpg" alt="My favorite activity" />
+      <p>
+        When I’m not studying or coding, I’m probably vibing with music, designing, or
+        dreaming up new creative projects. I believe learning is a journey — not a race!
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Victoria Ashionye Malagu | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
