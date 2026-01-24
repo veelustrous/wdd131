@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Belgium — A Place to Explore</title>
+  <meta name="description" content="Discover Belgium, a vibrant European country known for its culture, architecture, food, and unique lifestyle.">
+  <meta name="author" content="Victoria Ashionye Malagu">
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="styles/style.css" />
+
+  <!-- Defer JS -->
+  <script defer src="scripts/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Veelustrous Travel</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#">Home</a>
+        <a href="#">Places</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <!-- Use picture element with WebP source sets -->
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 1000px)" type="image/webp">
+        <source srcset="images/hero-medium.webp" media="(min-width: 600px)" type="image/webp">
+        <img src="images/hero-small.webp" alt="Brussels skyline with Grand Place" class="hero-img" loading="lazy">
+      </picture>
+
+      <div class="hero-caption container">
+        <h1>Belgium</h1>
+        <p class="tagline">Chocolate, waffles, medieval squares, and quiet canals — a cozy European gem.</p>
+      </div>
+    </section>
+
+    <!-- CONTENT LAYOUT (matches wireframe: weather + details) -->
+    <section class="place-grid container">
+      <!-- Weather card (mobile shows inline SVG icon, wide view uses pseudo-element emoticon) -->
+      <aside class="weather-card" aria-labelledby="weather-heading">
+        <h2 id="weather-heading">Weather</h2>
+
+        <!-- Mobile: inline SVG icon -->
+        <div class="weather-icon-mobile" aria-hidden="true">
+          <!-- Simple cloud & sun SVG -->
+          <svg width="48" height="48" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 15a4 4 0 0 1 4-4h1.26A5 5 0 1 1 19 14H18"/>
+              <path d="M13 3v2M16.5 4.5l-1.5 1.5M19 8h-2M16.5 11.5l-1.5-1.5M13 12v2"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="weather-stats">
+          <p class="stat"><strong>Condition:</strong> Partly Cloudy</p>
+          <p class="stat"><strong>Temperature:</strong> <span id="temp-val">8</span> °C</p>
+          <p class="stat"><strong>Wind Speed:</strong> <span id="wind-val">10</span> km/h</p>
+          <p class="stat"><strong>Wind Chill:</strong> <span id="windchill-val">—</span></p>
+        </div>
+      </aside>
+
+      <!-- Place info -->
+      <section class="place-info" aria-labelledby="place-heading">
+        <h2 id="place-heading">About Belgium</h2>
+
+        <p>
+          Belgium mixes medieval charm with modern culture. From the ornate Grand Place in Brussels to the canals of Bruges,
+          you’ll find chocolate shops, world-class museums, and cozy cafes. The official languages include Dutch, French, and German,
+          and the food scene is a delicious mix — waffles, fries, and mussels among favorites.
+        </p>
+
+        <h3>Top Sights</h3>
+        <ul class="sights">
+          <li>Grand Place (Bruxelles)</li>
+          <li>Canals of Bruges</li>
+          <li>Atomium</li>
+          <li>Royal Museums of Fine Arts</li>
+        </ul>
+
+        <h3>Practical Info</h3>
+        <p>Currency: Euro (€) · Timezone: Central European Time (CET)</p>
+
+        <div class="cta-row">
+          <a class="btn" href="#" role="button">Plan a Visit</a>
+          <a class="btn ghost" href="#" role="button">Save to Wishlist</a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> Veelustrous Travel</p>
+      <p>Document last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
