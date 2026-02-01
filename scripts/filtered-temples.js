@@ -103,15 +103,18 @@ buttons.forEach(button => {
     const filter = button.dataset.filter;
     let filtered = temples;
 
-    if (filter === "old") {
-      filtered = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
-    } else if (filter === "new") {
-      filtered = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
-    } else if (filter === "large") {
-      filtered = temples.filter(t => t.area > 90000);
-    } else if (filter === "small") {
-      filtered = temples.filter(t => t.area < 10000);
-    }
+      if (filter === "old") {
+        filtered = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
+      } else if (filter === "new") {
+        filtered = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
+      } else if (filter === "large") {
+        filtered = temples.filter(t => t.area > 90000);
+      } else if (filter === "small") {
+        filtered = temples.filter(t => t.area < 10000);
+      } else {
+        filtered = temples;
+      }
+
     renderTemples(filtered);
   });
 });
