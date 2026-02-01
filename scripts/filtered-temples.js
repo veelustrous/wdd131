@@ -100,6 +100,7 @@ function renderTemples(templeArray) {
 const buttons = document.querySelectorAll("nav button");
 buttons.forEach(button => {
   button.addEventListener("click", () => {
+    event.preventDefault();
     const filter = button.dataset.filter;
     let filtered = temples;
 
@@ -116,6 +117,7 @@ buttons.forEach(button => {
       }
 
     renderTemples(filtered);
+
   });
 });
 
