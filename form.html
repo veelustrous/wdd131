@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product Review Form for customers to submit feedback and rate their experience with products.">
+  <meta name="author" content="Victoria Ashionye Malagu">
+
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+<header>
+  <h1>Product Review</h1>
+</header>
+
+<main>
+  <form method="get" action="review.html">
+    
+    <!-- PRODUCT NAME -->
+    <label for="product">Product Name</label>
+    <select id="product" name="product" required>
+      <option selected disabled value="">Select a Product ...</option>
+      <!-- options will be added with JS -->
+    </select>
+
+    <!-- RATING -->
+    <fieldset>
+      <legend>Overall Rating</legend>
+
+      <label for="rate1">
+        <input type="radio" id="rate1" name="rating" value="1" required> 1
+      </label>
+      <label for="rate2">
+        <input type="radio" id="rate2" name="rating" value="2" required> 2
+      </label>
+      <label for="rate3">
+        <input type="radio" id="rate3" name="rating" value="3" required> 3
+      </label>
+      <label for="rate4">
+        <input type="radio" id="rate4" name="rating" value="4" required> 4
+      </label>
+      <label for="rate5">
+        <input type="radio" id="rate5" name="rating" value="5" required> 5
+      </label>
+    </fieldset>
+
+    <!-- INSTALL DATE -->
+    <label for="install-date">Date of Installation</label>
+    <input type="date" id="install-date" name="installDate" required>
+
+    <!-- USEFUL FEATURES -->
+    <fieldset>
+      <legend>Useful Features</legend>
+
+      <input type="checkbox" id="feature1" name="features" value="durable">
+      <label for="feature1">Durable</label>
+
+      <input type="checkbox" id="feature2" name="features" value="lightweight">
+      <label for="feature2">Lightweight</label>
+
+      <input type="checkbox" id="feature3" name="features" value="easy-install">
+      <label for="feature3">Easy to Install</label>
+
+      <input type="checkbox" id="feature4" name="features" value="cost-effective">
+      <label for="feature4">Cost Effective</label>
+    </fieldset>
+
+    
+    <!-- TEXT REVIEW -->
+    <label for="review-text">Written Review</label>
+    <textarea id="review-text" name="review"></textarea>
+
+    <!-- USERNAME -->
+    <label for="username">Your Name (optional)</label>
+    <input type="text" id="username" name="username">
+
+    <!-- SUBMIT -->
+    <input type="submit" value="Submit Review">
+    
+  </form>
+</main>
+
+<footer>
+  <p>© 2025 Product Reviews</p>
+</footer>
+
+<script src="scripts/form.js" defer></script>
+</body>
+</html>
