@@ -48,4 +48,9 @@ input[type="submit"] {
     align-items: center;
     gap: .5rem;
   }
+  .required {
+  color: red;
+  font-weight: bold;
+}
+
 }
