@@ -70,3 +70,31 @@ nav a {
     flex-direction: column;
   }
 }
+.faq-question {
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid #ff66b2;
+  margin-bottom: 0.5rem;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-answer.show {
+  max-height: 200px; /* adjust as needed */
+}
